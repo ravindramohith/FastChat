@@ -1,13 +1,6 @@
-# FASTCHAT
+# ✨MESSAGING APPLICATION✨
 
-### ✨HackStreet Boys✨
-
-## Team members:
-- Ravindra Mohith (210050112)
-- Adhitya Rao (210050060)
-- Nithin (210050071)
-
-Our FastChat allow users to send and receive messages and images to other users.
+THis Application allow users to send and receive messages and images to other users.
 
 ## Working Features
 
@@ -64,7 +57,7 @@ In case of successful login/signup, the program will show the available clients 
 
 ### For Personal Chat between two persons...
 
-Our program can send both text messages and images. 
+Program can send both text messages and images. 
 
 - Login/Signup
 - To Enter personal chatroom
@@ -174,18 +167,9 @@ A new group with given name and creator as the admin is created. This data is st
 - If B is offline then the encrypted message is stored in the database. Once B comes online, he recieves the message through the server he connected from the database
 
 ### Encryption
-- We used bcrypt for encrypting passwords and stored in database. We took a fixed salt. Since decrypting from encrypted password is not possible, any other person cannot know the password of client even though they have access of database. 
-- We used rsa encryption for the messages and send the encrypted message to server. Only the sender and reciever(might be a person(personal message) or a set of people(group message)) will know what the message is.
+- Used bcrypt for encrypting passwords and stored in database. We took a fixed salt. Since decrypting from encrypted password is not possible, any other person cannot know the password of client even though they have access of database. 
+- Used rsa encryption for the messages and send the encrypted message to server. Only the sender and reciever(might be a person(personal message) or a set of people(group message)) will know what the message is.
 
 ### Load Balancing
-- We distributed the clients among the servers equally using load_server so that the work load is equally balanced. 
+- Distributed the clients among the servers equally using load_server so that the work load is equally balanced. 
 - For the intercommunication between the servers we are running the master_server that acts as a intermediate in message transfer from a server to another server 
-
-## Team Members Contribution
-
-Most of the work we have done in team and helped each other
-
-Major contributions:
-- Adithya Rao: Personal Chat and Encryption
-- Mohith: Group Chat and Load balancing
-- Nithin: DataBase and Encryption
